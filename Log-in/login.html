@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+input[type=email],input[type=password]{
+ 
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #A0A0A0;
+  border-width: 1px;
+  border-radius: 2px;
+  
+box-shadow:-2px -2px 2.5px #696969;
+} 
+h1 {
+  background-color: #000080;
+  border: 2px solid #A0A0A0;
+  border-width: 1px;
+  box-shadow:-2px -2px 2.5px #696969;
+    width: 100%;
+  height: 40px;
+   margin:0;
+padding:0;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+ 
+}
+
+
+
+.imageBox {
+  position: relative;
+
+}
+
+.imageBox .hoverImg {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+ 
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+
+}
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+
+
+@media screen and (max-width: 200px) {
+  .col-200, .col-1005,  {
+    width: 50%;
+    margin-top: 0;
+	
+	
+  }
+}
+.container {
+  border-radius: 1px;
+  background-color: #F0F0F0;
+  padding: 20px;
+  border:2px solid #2A4C6C;
+  
+}
+</style>
+</head>
+<body>
+<span style="color: white;border: 2px; text-align: center;"><h1>Log In</h1>
+</span>
+<div class="container">
+ 
+
+ <form method="post" action="post.php">
+ 
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="email"><b>Email</b></label>
+    </div>
+    <div class="col-75">
+      <input style="color: #000000; background-color: #FFFFFF;" type="email" id="email" name="email" required>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="password"><b>Password</b></label>
+    </div>
+    <div class="col-75">
+      <input style="color: #000000; background-color: #FFFFFF;" type="password" id="password" name="password" required>
+    </div>
+  </div>
+ 
+
+<div class="imageBox">
+  <div class="imageInn">
+  
+    <input type="image" img src="LOGIN-S.PNG">
+  </div>
+  <div class="hoverImg">
+    <input type="image" img src="SEND-H.PNG">
+ </div>
+ 
+</div>
+  </form>
+</div>
+
+</body>
+</html>

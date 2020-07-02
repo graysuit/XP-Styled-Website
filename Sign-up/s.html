@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+input[type=text],input[type=email],input[type=password], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #A0A0A0;
+  border-width: 1px;
+  border-radius: 2px;
+  resize: vertical;
+box-shadow:-2px -2px 2.5px #696969;
+} 
+h1 {
+  background-color: #000080;
+  border: 2px solid #A0A0A0;
+  border-width: 1px;
+  box-shadow:-2px -2px 2.5px #696969;
+  height: 41px;
+  width: 100%;
+   margin:0;
+padding:0;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+ 
+}
+
+
+
+.imageBox {
+  position: relative;
+
+}
+
+.imageBox .hoverImg {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+ 
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+
+}
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75,  {
+    width: 100%;
+    margin-top: 0;
+	
+	
+  }
+}
+.container {
+  border-radius: 1px;
+  background-color: #F0F0F0;
+  padding: 20px;
+  border:2px solid #2A4C6C;
+}
+</style>
+</head>
+<body>
+<span style="color: white;border: 2px; text-align: center;"><h1>Sign up</h1>
+</span>
+<div class="container">
+ 
+
+ <form method="post" action="post.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="full-name"><b>Full Name</b></label>
+    </div>
+    <div class="col-75">
+      <input style="color: #000000;background-color: #FFFFFF;" type="text" id="full-name" name="full-name" required>
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="email"><b>Email</b></label>
+    </div>
+    <div class="col-75">
+    <input style="color: #000000;background-color: #FFFFFF;" type="email" id="email" name="email" required>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="password"><b>Password</b></label>
+    </div>
+    <div class="col-75">
+      <input style="color: #000000; background-color: #FFFFFF;" type="password" id="password" name="password" required>
+    </div>
+  </div>
+ <p><input type="checkbox" onchange="this.setCustomValidity(validity.valueMissing ? 'Please tick the checkbox' : '');" required name="terms"> I agree to the <u><a href=".././Terms-and-Conditions/terms.html" rel="nofollow">Terms and Conditions</a></u></p>
+<script>
+  document.getElementById("field_terms").setCustomValidity("Please tick the checkbox");
+</script>
+<div class="imageBox">
+  <div class="imageInn">
+  
+    <input type="image" img src="SEND-S.PNG">
+  </div>
+  <div class="hoverImg">
+    <input type="image" img src="SEND-H.PNG" text-align="center">
+ </div>
+ 
+</div>
+  </form>
+</div>
+
+</html>
